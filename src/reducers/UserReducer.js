@@ -11,6 +11,8 @@ export default (state = initialState, action) => {
     case 'SET_NAME':
       return { ...state, name: action.payload.name }
       break
+    default:
+          break
   }
 
   return state

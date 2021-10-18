@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { useSelector } from 'react-redux'
 import ReactToolTip from 'react-tooltip'
 import { Container, Menu, PageBody } from './AppStyles'
 import HomeScreen from './pages/HomeScreen'

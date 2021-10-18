@@ -41,7 +41,7 @@ export default () => {
       setActivePage(products.result.page)
     }
   }
-  
+
   useEffect(() => {
     const getCategories = async () => {
       const cat = await api.getCategories()
@@ -62,7 +62,7 @@ export default () => {
   useEffect(() => {
     setProducts([])
     getProducts()
-  }, [activeCategory, activePage, activeSearch])
+  }, [activeCategory, activePage, activeSearch, getProducts])
 
   const handleProductClick = (data) => {
     setModalData(data)
