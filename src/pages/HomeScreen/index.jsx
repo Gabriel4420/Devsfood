@@ -62,7 +62,7 @@ export default () => {
   useEffect(() => {
     setProducts([])
     getProducts()
-  }, [activeCategory, activePage, activeSearch, getProducts])
+  }, [activeCategory, activePage, activeSearch])
 
   const handleProductClick = (data) => {
     setModalData(data)
