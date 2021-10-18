@@ -9,15 +9,21 @@ import MenuItem from './components/MenuItem'
 import PrivateRoute from './components/PrivateRoute'
 import Cart from './components/Cart'
 export default () => {
-  const name = useSelector((state) => state.user.name)
-
   return (
     <BrowserRouter>
       <Container>
         <Menu>
           <MenuItem title="Loja" icon="/assets/store.png" link="/"></MenuItem>
-          <MenuItem title="Pedidos" icon="/assets/order.png" link="/orders"></MenuItem>
-          <MenuItem title="Meu perfil" icon="/assets/profile.png" link="/profile"></MenuItem>
+          <MenuItem
+            title="Pedidos"
+            icon="/assets/order.png"
+            link="/orders"
+          ></MenuItem>
+          <MenuItem
+            title="Meu perfil"
+            icon="/assets/profile.png"
+            link="/profile"
+          ></MenuItem>
         </Menu>
         <PageBody>
           <Switch>
@@ -36,8 +42,8 @@ export default () => {
           </Switch>
         </PageBody>
         <Cart />
-        <ReactToolTip id="tip-top" place='top' effect='solid' />
-        <ReactToolTip id="tip-right" place='right' effect='solid' />
+        <ReactToolTip id="tip-top" place="top" effect="solid" />
+        <ReactToolTip id="tip-right" place="right" effect="solid" />
       </Container>
     </BrowserRouter>
   )
