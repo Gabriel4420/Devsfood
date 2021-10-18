@@ -39,7 +39,7 @@ const Cart = () => {
               <ProductPhoto src={item.image} />
               <ProductInfoArea>
                 <ProductTitle>{item.name}</ProductTitle>
-                <ProductPrice>R$ {item.price.toFixed(2)}</ProductPrice>
+                <ProductPrice>R$ {item.price.toFixed(2) * item.qt}</ProductPrice>
               </ProductInfoArea>
               <ProductQuantityArea>
                 <ProductQtIcon
