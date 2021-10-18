@@ -41,6 +41,7 @@ export default () => {
       setActivePage(products.result.page)
     }
   }
+  
   useEffect(() => {
     const getCategories = async () => {
       const cat = await api.getCategories()

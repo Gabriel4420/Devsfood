@@ -23,7 +23,7 @@ export const CartHeader = styled.div`
   cursor: pointer;
 `
 export const CartBody = styled.div`
-  display: ${(props) => (props.show == true ? 'block' : 'none')};
+  display: ${(props) => (props.show === true ? 'block' : 'none')};
   color: white;
 `
 export const CartText = styled.h2`
